@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Madoff</title>
+    <title>Produits - Madoff</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -44,7 +44,7 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin: 2rem auto;
             width: 90%;
-            max-width: 800px;
+            max-width: 1200px;
             border-radius: 10px;
         }
         .content h2 {
@@ -54,29 +54,29 @@
         .content p {
             font-size: 1.1rem;
             line-height: 1.6;
-            margin-bottom: 2rem;
         }
-        .contact-info {
+        .product-gallery {
             display: flex;
-            flex-direction: column;
+            justify-content: space-around;
             align-items: center;
-            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
         }
-        .contact-info a {
-            text-decoration: none;
-            color: #495057;
+        .product {
+            text-align: center;
+            margin: 1rem;
+        }
+        .product img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .product p {
+            margin-top: 0.5rem;
+            font-size: 1rem;
             font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: color 0.3s ease;
-        }
-        .contact-info a:hover {
-            color: #007bff;
-        }
-        .contact-info img {
-            width: 40px;
-            height: 40px;
         }
         footer {
             background-color: #343a40;
@@ -91,23 +91,31 @@
 <body>
     <header>
         <h1>Madoff</h1>
-        <p>Contactez-nous</p>
+        <p>Nos produits</p>
     </header>
     <nav>
-        <a href="acceuil.html">Revenir à l'accueil</a>
-        <a href="produits.html">Produits</a>
-        <a href="produits.html">À propos de nous</a>
+        <a href="acceuil.html">Accueil</a>
+        <a href="propos.html">A propos</a>
+        <a href="contact.html">Contact</a>
     </nav>
     <main class="content">
-        <h2>Contactez-nous</h2>
-        <p>Pour toute question ou information, n'hésitez pas à nous joindre via nos réseaux sociaux ou par email.</p>
-        <div class="contact-info">
-            <a href="https://www.snapchat.com/add/votre_nom" target="_blank">
-                <img src="snap.png" alt="Snapchat Logo">
-                <span>Suivez-nous sur Snapchat</span>
-            </a>
-            <p>Snapchat : <a href="mailto:contact@madoff.com">madoff698</a></p>
-            <p>Téléphone : +33 1 23 45 67 89</p>
+        <h2>Explorez notre collection</h2>
+        <p>
+            Une gamme exquise de parfums et de soins pour chaque occasion.
+        </p>
+        <div class="product-gallery">
+            <div class="product">
+                <img src="3.png" alt="Produit 1">
+                <p>Baccalauréat Rouge</p>
+            </div>
+            <div class="product">
+                <img src="2.png" alt="Produit 2">
+                <p>Essence Florale</p>
+            </div>
+            <div class="product">
+                <img src="1.png" alt="Produit 3">
+                <p>Lumière Noire</p>
+            </div>
         </div>
     </main>
     <footer>
